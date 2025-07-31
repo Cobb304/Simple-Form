@@ -10,8 +10,10 @@ import "./App.css";
 export default function App() {
   return (<>
     <Provider store={store}>
-      <InputSection />
-      <OutputSection />
+      <div className="flex h-screen w-screen flex-col md:flex-row">
+        <InputSection />
+        <OutputSection />
+      </div>
     </Provider>
   </>);
 }
